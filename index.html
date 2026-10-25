@@ -1,15 +1,56 @@
 <!-- Group 7: Carina, Kristyn, Anna -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="style.css">
- <title>Interactive Experience</title>
-</head>
-<body>
- <h1>...</h1>
- <p>...</p>
- <a href="https://www.example.com">...</a>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A friendly profile card for Mochi the Bichon Frise."
+    />
+    <title>Mochi's Pet Profile</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Pet profile card -->
+    <main class="profile-card">
+      <!-- Pet photo -->
+      <div class="photo-frame">
+        <img
+          class="pet-photo"
+          src="images/mochi.png"
+          alt="Mochi, a fluffy white Bichon Frise"
+        />
+      </div>
+
+      <!-- Pet details -->
+      <section class="profile-content" aria-labelledby="pet-name">
+        <p class="eyebrow">Meet my best friend</p>
+        <h1 id="pet-name">Mochi</h1>
+    
+        <div class="pet-facts" aria-label="Pet information">
+          <p><span>Breed</span>Bichon Frise</p>
+          <p><span>Age</span>11 years old</p>
+        </div>
+
+        <!-- Personality traits -->
+        <div class="traits">
+          <h2>Personality</h2>
+          <ul>
+            <li>Friendly</li>
+            <li>Sleepy</li>
+            <li>Loves Food</li>
+          </ul>
+        </div>
+
+        <!-- Future favorite action -->
+        <button class="favorite-button" type="button" aria-label="Favorite Mochi">
+          <span aria-hidden="true">♥</span>
+          Favorite
+        </button>
+      </section>
+    </main>
+  </body>
 </html>
+    
+

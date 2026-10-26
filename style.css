@@ -18,19 +18,29 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 32px 20px;
-  display: grid;
-  place-items: center;
   color: var(--text);
   background:
     radial-gradient(circle at 15% 20%, #fff9f3 0, transparent 26%),
     radial-gradient(circle at 85% 80%, #f4e6e0 0, transparent 28%),
     var(--background);
   font-family: Inter, ui-rounded, "SF Pro Rounded", "Segoe UI", sans-serif;
-  }
+}
+
+/* Responsive collection of pet cards */
+.cards-grid {
+  width: min(100%, 1320px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
 
 /* Pet profile card */
 .profile-card {
-  width: min(100%, 390px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   background: var(--card);
   border: 1px solid rgba(255, 255, 255, 0.8);
@@ -54,7 +64,10 @@ body {
 
 /* Pet details */
 .profile-content {
-     padding: 24px 28px 28px;
+  padding: 24px 28px 28px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -74,6 +87,11 @@ h1 {
   font-weight: 600;
   line-height: 1.05;
   letter-spacing: -0.04em;
+}
+
+h1 span {
+  font-size: 0.55em;
+  white-space: nowrap;
 }
 
 .pet-facts {
@@ -107,6 +125,10 @@ h1 {
 }
 
 /* Personality traits */
+.traits {
+  margin-bottom: auto;
+}
+
 .traits h2 {
   margin: 0 0 12px;
   color: var(--muted);
@@ -169,7 +191,7 @@ h1 {
 .favorite-button:focus-visible {
   outline: 3px solid rgba(216, 117, 121, 0.35);
   outline-offset: 4px;
-  }
+}
 
 .favorite-button:active {
   transform: translateY(0);

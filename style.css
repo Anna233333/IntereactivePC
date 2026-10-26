@@ -1,13 +1,13 @@
 /* Page setup */
 :root {
-  --background: #f7f3ee;
-  --card: #ffffff;
-  --text: #403936;
-  --muted: #847874;
+  --background: #aeeed3;
+  --card: #fff8b0;
+  --text: #287a74;
+  --muted: #55a9a0;
   --accent: #d87579;
   --accent-dark: #bd5e63;
-  --accent-soft: #fbe9e7;
-  --line: #eee5df;
+  --accent-soft: #aeeed3;
+  --line: rgba(40, 122, 116, 0.22);
 }
 
 * {
@@ -20,8 +20,8 @@ body {
   padding: 32px 20px;
   color: var(--text);
   background:
-    radial-gradient(circle at 15% 20%, #fff9f3 0, transparent 26%),
-    radial-gradient(circle at 85% 80%, #f4e6e0 0, transparent 28%),
+    radial-gradient(circle at 12% 16%, rgba(255, 248, 176, 0.95) 0, transparent 32%),
+    radial-gradient(circle at 88% 84%, rgba(85, 169, 160, 0.58) 0, transparent 36%),
     var(--background);
   font-family: Inter, ui-rounded, "SF Pro Rounded", "Segoe UI", sans-serif;
 }
@@ -43,14 +43,15 @@ body {
   flex-direction: column;
   overflow: hidden;
   background: var(--card);
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(40, 122, 116, 0.2);
   border-radius: 28px;
-  box-shadow: 0 20px 50px rgba(82, 63, 54, 0.13);
+  box-shadow: 0 20px 50px rgba(40, 122, 116, 0.2);
 }
 
 /* Pet photo */
 .photo-frame {
-  padding: 18px 18px 0;
+  padding: 18px;
+  background: linear-gradient(145deg, #287a74, #55a9a0);
 }
 
 .pet-photo {
@@ -73,7 +74,7 @@ body {
 
 .eyebrow {
   margin: 0 0 5px;
-  color: var(--accent-dark);
+  color: #287a74;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.13em;
@@ -149,7 +150,7 @@ h1 span {
 
 .traits li {
   padding: 8px 12px;
-  color: #6f5756;
+  color: #287a74;
   background: var(--accent-soft);
   border-radius: 999px;
   font-size: 0.82rem;
